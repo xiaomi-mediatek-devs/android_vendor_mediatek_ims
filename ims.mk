@@ -17,10 +17,11 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/mediatek/ims
 
-
+# ImsService
 PRODUCT_PACKAGES += \
     ImsService
 
+# IMS Properties
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
@@ -28,3 +29,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.vilte_support=0 \
     persist.vendor.ims_support=1 \
     persist.vendor.volte_support=1
+
+# MTK IMS Overlays
+PRODUCT_PACKAGES += \
+    mtk-ims \
+    mtk-ims-telephony
