@@ -1,0 +1,19 @@
+// Automatically generated file. DO NOT MODIFY
+//
+// (c) Aryan Sinha <techyminati@outlook.com>
+
+soong_namespace {
+	imports: [
+	],
+}
+
+android_app_import {
+ name: "ImsService",
+ owner: "mediatek",
+ apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
+ certificate: "platform",
+ dex_preopt: {
+  enabled: false,
+ },
+ privileged: true,
+}
