@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := vendor/mediatek/ims
+
 PRODUCT_SOONG_NAMESPACES += \
     vendor/mediatek/ims
 
@@ -34,3 +36,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     mtk-ims \
     mtk-ims-telephony
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
